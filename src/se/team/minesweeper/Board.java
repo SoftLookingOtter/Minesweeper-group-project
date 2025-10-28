@@ -1,4 +1,5 @@
 package se.team.minesweeper;
+import java.util.Random;
 
 //Board represents entire game board with rows, column & cell
 public class Board {
@@ -134,4 +135,5 @@ public class Board {
             System.out.println();
         }
     }
+  
 }
