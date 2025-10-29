@@ -17,5 +17,27 @@ public class Cell {
         this.adjacentMines = 0;
     }
 
+    //Getters & Setters
+
+    public boolean isMine() { return mine; }
+    public boolean isRevealed() { return revealed; }
+    public int getAdjacentMines() { return adjacentMines; }
+
+    public void setMine(boolean mine) { this.mine = mine; }
+    public void setRevealed(boolean revealed) { this.revealed = revealed; }
+    public void setAdjacentMines(int count) { this.adjacentMines = count; }
+
+    //How the cell should be displayed when the board is printed
+
+    @Override
+    public String toString() {
+        //Dot is equal to hidden box
+        if (!revealed) return ".";
+        //Mine
+        if (mine) return "*";
+        //Number or blank
+        return adjacentMines == 0 ? " " : String.valueOf(adjacentMines);
+    }
+
 
 }
