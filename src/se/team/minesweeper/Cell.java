@@ -1,5 +1,5 @@
 package se.team.minesweeper;
-// add Cell logic
+// add Cell logic,
 
 public class Cell {
 }
