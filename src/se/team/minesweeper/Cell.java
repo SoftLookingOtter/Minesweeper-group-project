@@ -31,11 +31,17 @@ public class Cell {
 
     @Override
     public String toString() {
-        //Dot is equal to hidden box
-        if (!revealed) return "-";
-        //Mine
-        if (mine) return "*";
-        //Number or blank
+        // Hidden cell symbol
+        if (!revealed) {
+            return "■"; // Solid square for hidden cells
+        }
+
+        // Revealed mine
+        if (mine) {
+            return "*";
+        }
+
+        // Revealed safe cell: show number or blank
         return adjacentMines == 0 ? " " : String.valueOf(adjacentMines);
     }
 
