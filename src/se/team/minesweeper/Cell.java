@@ -17,7 +17,7 @@ public class Cell {
         this.adjacentMines = 0;
     }
 
-    //Getters & Setters,
+    //Getters & Setters
 
     public boolean isMine() { return mine; }
     public boolean isRevealed() { return revealed; }
