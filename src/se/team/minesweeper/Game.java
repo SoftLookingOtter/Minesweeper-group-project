@@ -23,7 +23,7 @@ public class Game {
             //Shows actual board without mines
             board.printBoard(false);
             //Let the player make a move
-            int[] move = player.makeMove();
+            int[] move = player.makeMove(board.getRows(), board.getCols());
             //Try to reveal the cell if false is returned, the player hit a mine
             boolean safe = board.revealCell(move[0], move[1]);
 
