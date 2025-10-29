@@ -32,7 +32,7 @@ public class Cell {
     @Override
     public String toString() {
         //Dot is equal to hidden box
-        if (!revealed) return ".";
+        if (!revealed) return "-";
         //Mine
         if (mine) return "*";
         //Number or blank
