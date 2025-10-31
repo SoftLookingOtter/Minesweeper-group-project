@@ -159,5 +159,4 @@ public class Board {
     // Getters if needed elsewhere
     public int getRows() { return rows; }
     public int getCols() { return cols; }
-    public Cell getCell(int r, int c) { return grid[r][c]; }
 }
